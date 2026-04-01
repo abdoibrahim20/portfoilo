@@ -2,7 +2,7 @@
 
 
 
-![Preview](preview.jpg)
+![Preview](preview.png)
 
 
 
