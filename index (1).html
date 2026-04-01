@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Abdelrahman Nasef — Frontend Developer</title>
+<meta name="description" content="Frontend Developer based in Cairo, Egypt. Crafting beautiful, fast, and responsive digital experiences.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader-monogram">AN</div>
+  <div class="loader-bar-wrap"><div class="loader-bar" id="loaderBar"></div></div>
+  <div class="loader-pct" id="loaderPct">0%</div>
+</div>
+
+<!-- Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Scroll Progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-logo">AN</a>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <canvas class="hero-canvas" id="particleCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-hello reveal">Hello, World 👋</div>
+      <h1 class="hero-title reveal reveal-delay-1">I'm <span class="gradient">Abdelrahman</span></h1>
+      <div class="hero-typing reveal reveal-delay-2"><span id="typingText"></span><span class="cursor"></span></div>
+      <p class="hero-bio reveal reveal-delay-3">Frontend Developer based in Cairo — I craft beautiful, fast, and responsive digital experiences.</p>
+      <div class="hero-buttons reveal reveal-delay-4">
+        <a href="#projects" class="btn-primary">See My Work</a>
+        <a href="https://github.com/abdoibrahim20" target="_blank" rel="noopener" class="btn-outline">Download CV</a>
+      </div>
+      <div class="hero-socials reveal reveal-delay-5">
+        <a href="https://github.com/abdoibrahim20" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/abdo-nasef-0a98b4271" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="monogram-ring">
+        <span class="monogram-text">AN</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section" id="about">
+  <div class="section-label reveal">About Me</div>
+  <h2 class="section-title reveal"><span class="gradient">Who I Am</span></h2>
+  <div class="about-grid">
+    <div class="terminal reveal">
+      <div class="terminal-bar"><span></span><span></span><span></span></div>
+      <div class="terminal-body">
+        <span class="keyword">const</span> <span class="key">developer</span> = <span class="bracket">{</span><br/>
+        &nbsp;&nbsp;<span class="key">name</span>: <span class="string">"Abdelrahman Nasef"</span>,<br/>
+        &nbsp;&nbsp;<span class="key">location</span>: <span class="string">"Cairo, Egypt 🇪🇬"</span>,<br/>
+        &nbsp;&nbsp;<span class="key">education</span>: <span class="string">"Computer Science Student"</span>,<br/>
+        &nbsp;&nbsp;<span class="key">skills</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JS"</span>, <span class="string">"React"</span>],<br/>
+        &nbsp;&nbsp;<span class="key">available</span>: <span class="bool">true</span>,<br/>
+        &nbsp;&nbsp;<span class="key">contact</span>: <span class="string">"nasefabdo600@gmail.com"</span><br/>
+        <span class="bracket">}</span>;
+      </div>
+    </div>
+    <div>
+      <p class="about-text reveal">I'm a passionate Frontend Developer and Computer Science student from Cairo, Egypt. I love turning ideas into beautifully crafted, performant web experiences. Every pixel matters, every interaction counts.</p>
+      <div class="stats-grid">
+        <div class="stat reveal reveal-delay-1"><div class="stat-number"><span class="counter" data-target="5">0</span></div><div class="stat-label">Projects Built</div></div>
+        <div class="stat reveal reveal-delay-2"><div class="stat-number"><span class="counter" data-target="2">0</span></div><div class="stat-label">Years of Learning</div></div>
+        <div class="stat reveal reveal-delay-3"><div class="stat-number"><span class="counter" data-target="100">0</span>%</div><div class="stat-label">Passion</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="section" id="skills">
+  <div class="section-label reveal">My Toolkit</div>
+  <h2 class="section-title reveal"><span class="gradient">Skills & Tech</span></h2>
+  <p class="section-sub reveal">Technologies I work with daily to bring ideas to life.</p>
+  <div class="skills-grid" id="skillsGrid">
+    <div class="skill-item reveal"><div class="skill-header"><span>HTML5</span><span>95%</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+    <div class="skill-item reveal reveal-delay-1"><div class="skill-header"><span>CSS3</span><span>90%</span></div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+    <div class="skill-item reveal reveal-delay-2"><div class="skill-header"><span>JavaScript</span><span>80%</span></div><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+    <div class="skill-item reveal reveal-delay-3"><div class="skill-header"><span>React</span><span>75%</span></div><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+    <div class="skill-item reveal reveal-delay-4"><div class="skill-header"><span>PHP / Laravel</span><span>65%</span></div><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+    <div class="skill-item reveal reveal-delay-5"><div class="skill-header"><span>Node.js</span><span>60%</span></div><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+    <div class="skill-item reveal"><div class="skill-header"><span>Git / GitHub</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+    <div class="skill-item reveal reveal-delay-1"><div class="skill-header"><span>Responsive Design</span><span>95%</span></div><div class="skill-bar"><div class="skill-fill" data-width="95"></div></div></div>
+  </div>
+  <div class="tech-badges reveal">
+    <span class="tech-badge">HTML5</span>
+    <span class="tech-badge">CSS3</span>
+    <span class="tech-badge">JavaScript</span>
+    <span class="tech-badge">React</span>
+    <span class="tech-badge">TypeScript</span>
+    <span class="tech-badge">Tailwind CSS</span>
+    <span class="tech-badge">Bootstrap</span>
+    <span class="tech-badge">Git</span>
+    <span class="tech-badge">GitHub</span>
+    <span class="tech-badge">PHP</span>
+    <span class="tech-badge">Laravel</span>
+    <span class="tech-badge">Node.js</span>
+    <span class="tech-badge">Figma</span>
+    <span class="tech-badge">REST APIs</span>
+    <span class="tech-badge">Responsive Design</span>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="section" id="projects">
+  <div class="section-label reveal">Portfolio</div>
+  <h2 class="section-title reveal"><span class="gradient">Featured Work</span></h2>
+  <p class="section-sub reveal">A selection of projects that showcase my skills and passion.</p>
+  <div class="projects-grid">
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-header" style="background:#FF6B00"></div>
+      <div class="project-body">
+        <div class="project-num">01</div>
+        <h3 class="project-name">IRONCLAD GYM</h3>
+        <p class="project-desc">Bold gym & fitness landing page with smooth animations and modern layout.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <div class="project-links">
+          <a href="https://abdoibrahim20.github.io/ironclad-gym" target="_blank" rel="noopener" aria-label="Live Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          <a href="https://github.com/abdoibrahim20/ironclad-gym" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-header" style="background:#00C896"></div>
+      <div class="project-body">
+        <div class="project-num">02</div>
+        <h3 class="project-name">SmileCare Clinic</h3>
+        <p class="project-desc">Professional dental clinic landing page with clean, modern UI design.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <div class="project-links">
+          <a href="https://abdoibrahim20.github.io/smilecare-landing-page" target="_blank" rel="noopener" aria-label="Live Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          <a href="https://github.com/abdoibrahim20/smilecare-landing-page" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-3">
+      <div class="project-header" style="background:#C8A97E"></div>
+      <div class="project-body">
+        <div class="project-num">03</div>
+        <h3 class="project-name">LUXORA Fashion</h3>
+        <p class="project-desc">Luxury e-commerce platform with cart & product filtering system.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <div class="project-links">
+          <a href="https://abdoibrahim20.github.io/Luxury-Fashion-Store" target="_blank" rel="noopener" aria-label="Live Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          <a href="https://github.com/abdoibrahim20/Luxury-Fashion-Store" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-header" style="background:#00D4FF"></div>
+      <div class="project-body">
+        <div class="project-num">04</div>
+        <h3 class="project-name">Ultra Dashboard</h3>
+        <p class="project-desc">Responsive admin dashboard with charts & dark mode toggle.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <div class="project-links">
+          <a href="https://abdoibrahim20.github.io/ultra-admin-dashboard" target="_blank" rel="noopener" aria-label="Live Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          <a href="https://github.com/abdoibrahim20/ultra-admin-dashboard" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-header" style="background:#FF2D55"></div>
+      <div class="project-body">
+        <div class="project-num">05</div>
+        <h3 class="project-name">La Bella Restaurant</h3>
+        <p class="project-desc">Luxury Italian restaurant website with reservation UI and elegant design.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <div class="project-links">
+          <a href="https://abdoibrahim20.github.io/La-Bella-Restaurant" target="_blank" rel="noopener" aria-label="Live Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          <a href="https://github.com/abdoibrahim20/La-Bella-Restaurant" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-3">
+      <div class="project-header" style="background:#7B2FFF"></div>
+      <div class="project-body">
+        <div class="project-num">06</div>
+        <h3 class="project-name">Startup Idea Generator</h3>
+        <p class="project-desc">SaaS-style web app that generates and validates startup ideas using AI and business logic.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        <div class="project-links">
+          <a href="https://abdoibrahim20.github.io/Startup-Idea-Generator-Validator" target="_blank" rel="noopener" aria-label="Live Demo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+          <a href="https://github.com/abdoibrahim20/Startup-Idea-Generator-Validator" target="_blank" rel="noopener" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="section" id="contact">
+  <div class="section-label reveal">Get In Touch</div>
+  <h2 class="section-title reveal"><span class="gradient">Let's Build Something</span></h2>
+  <p class="section-sub reveal">Available for freelance projects — let's talk.</p>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="available-badge">Available for work</div>
+      <div class="contact-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>nasefabdo600@gmail.com</span>
+        <button class="copy-btn" id="copyBtn">Copy</button>
+      </div>
+      <div class="contact-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Cairo, Egypt</span>
+      </div>
+      <div class="contact-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span>Usually responds within 24 hours</span>
+      </div>
+      <div class="contact-buttons">
+        <a href="https://github.com/abdoibrahim20" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
+        <a href="https://www.linkedin.com/in/abdo-nasef-0a98b4271" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-row">
+        <div class="form-group"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required/></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="you@example.com" required/></div>
+      </div>
+      <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" placeholder="What's this about?" required/></div>
+      <div class="form-group"><label for="message">Message</label><textarea id="message" placeholder="Tell me about your project..." required></textarea></div>
+      <button type="submit" class="btn-submit">Send Message</button>
+      <div class="form-success" id="formSuccess">✅ Message sent successfully! I'll get back to you soon.</div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/abdoibrahim20" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/abdo-nasef-0a98b4271" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <div class="footer-text">Designed & Built with ❤️ by Abdelrahman Nasef</div>
+  <div class="footer-copy">© 2026 Abdelrahman Nasef. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
