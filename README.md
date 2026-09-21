@@ -34,7 +34,7 @@ A futuristic, award-winning personal portfolio website built with pure HTML, CSS
 
 ## 🚀 Live Demo
 
-🔗 [abdoibrahim20.github.io/portfolio]((https://abdoibrahim20.github.io/portfoilo/))
+🔗 [abdoibrahim20.github.io/portfolio](https://abdoibrahim20.github.io/portfoilo/)
 
 ---
 
